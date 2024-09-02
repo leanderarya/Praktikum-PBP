@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Javascript</title>
+</head>
+<body>
+    <p class="content">Belajar JavaScript</p>
+    <p class="content">Belajar Document Object Model</p>
+
+    <h2>Akses elemen menggunakan getElementsByClassName</h2>
+    <p id="demoClass"></p>
+
+    <h2>Akses elemen menggunakan querySelectorAll</h2>
+    <p id="demoSelector"></p>
+
+    <script>
+        var x = document.getElementsByClassName("content");
+        document.getElementById("demoClass").innerHTML = 
+            "Isi teks[0]: " + x[0].innerHTML + "<br />" + 
+            "Isi teks[1]: " + x[1].innerHTML;
+
+        var y = document.querySelectorAll("p.content");
+        document.getElementById("demoSelector").innerHTML = 
+            "Isi teks[0]: " + y[0].innerHTML + "<br />" + 
+            "Isi teks[1]: " + y[1].innerHTML;
+    </script>
+</body>
+</html>

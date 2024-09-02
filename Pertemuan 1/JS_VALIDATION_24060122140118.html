@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24060122140118_Arya Ajisadda Haryanto</title>
+</head>
+<body>
+    <form id="productForm">
+        <h2>Form Tambah Data Produk</h2>
+        <table>
+            <tr>
+                <td><label for="namaProduk">Nama Produk</label></td>
+                <td><input type="text" id="namaProduk" name="namaProduk" required></td>
+            </tr>
+            <tr>
+                <td><label for="deskripsi">Deskripsi Barang</label></td>
+                <td><textarea id="deskripsi" name="deskripsi" required></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="kategori">Kategori</label></td>
+                <td>
+                    <select id="kategori" name="kategori" required>
+                        <option value="">--Pilih Kategori--</option>
+                        <option value="Baju">Baju</option>
+                        <option value="Elektronik">Elektronik</option>
+                        <option value="Alat Tulis">Alat Tulis</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="subKategori">Sub Kategori</label></td>
+                <td>
+                    <select id="subKategori" name="subKategori" required>
+                        <option value="">--Pilih Sub Kategori--</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="hargaSatuan">Harga Satuan</label></td>
+                <td><input type="number" id="hargaSatuan" name="hargaSatuan" required></td>
+            </tr>
+            <tr>
+                <td><label>Grosir</label></td>
+                <td>
+                    <input type="radio" id="grosirYa" name="grosir" value="Ya" required> Ya
+                    <input type="radio" id="grosirTidak" name="grosir" value="Tidak" required> Tidak
+                </td>
+            </tr>
+            <tr>
+                <td><label for="hargaGrosir">Harga Grosir</label></td>
+                <td><input type="number" id="hargaGrosir" name="hargaGrosir"></td>
+            </tr>
+            <tr>
+                <td><label>Jasa Kirim</label></td>
+                <td>
+                    <input type="checkbox" name="jasaKirim" value="JNE"> JNE<br>
+                    <input type="checkbox" name="jasaKirim" value="TIKI"> TIKI<br>
+                    <input type="checkbox" name="jasaKirim" value="SiCepat"> SiCepat<br>
+                    <input type="checkbox" name="jasaKirim" value="Ninja Express"> Ninja Express<br>
+                    <input type="checkbox" name="jasaKirim" value="Wahana"> Wahana
+                </td>
+            </tr>
+            <tr>
+                <td><label for="captcha">Captcha</label></td>
+                <td>
+                    <input type="text" id="captchaCode" readonly>
+                    <input type="text" id="captcha" name="captcha" required>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

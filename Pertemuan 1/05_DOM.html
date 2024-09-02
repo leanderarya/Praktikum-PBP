@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Javascript</title>
+    <script>
+        function hideImage() {
+            document.getElementById("imgLogo").style.visibility = "hidden";
+        }
+        function showImage() {
+            document.getElementById("imgLogo").style.visibility = "visible";
+        }
+    </script>
+</head>
+<body>
+
+    <h2>Hypertext Markup Language</h2>
+    <img id="imgLogo" src="html_logo.png" alt="gambar" style="width:200px;height:200px;border:0;">
+    <br />
+    <button id="btn01" type="button" onclick="hideImage()">Hide Image</button>
+    <button id="btn02" type="button" onclick="showImage()">Show Image</button>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form Login</title>
+<script>
+function validateForm() {
+    var x = document.forms["formLogin"]["fusername"].value;
+    var y = document.forms["formLogin"]["fpassword"].value;
+    if (x == "" || y == "") {
+        alert("Username and password harus diisi!");
+        return false;
+    }
+}
+</script>
+</head>
+<body>
+
+<h2>Login</h2>
+<form name="formLogin" action="process.php" onsubmit="return validateForm()" method="post">
+    Name: <input type="text" name="fusername" /><br />
+    Password: <input type="password" name="fpassword" />
+    <input type="submit" value="Submit" />
+</form>
+
+</body>
+</html>

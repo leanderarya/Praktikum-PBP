@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Javascript</title>
+</head>
+<body>
+    <p>Klik button "Create New Element" untuk membuat elemen BUTTON baru</p>
+    <button onclick="myFunction01()">Create New Element</button>
+
+    <ul id="myList">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+
+    <p>Klik button "Remove Child Element" untuk menghapus child element list</p>
+    <button onclick="myFunction02()">Remove Child Element</button>
+
+    <script>
+        function myFunction01() {
+            var btn = document.createElement("BUTTON");
+            var t = document.createTextNode("CLICK ME");
+            btn.appendChild(t);
+            document.body.appendChild(btn);
+        }
+        function myFunction02() {
+            var list = document.getElementById("myList");
+            list.removeChild(list.childNodes[1]);
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Belajar Javascript</title>
+</head>
+<body>
+<h1>Fungsi</h1>
+<script>
+var myArray = [];
+myArray[0] = 5;
+myArray[1] = 10;
+myArray[2] = 15;
+
+document.write("Jumlah seluruh elemen array adalah " + sumArray(myArray));
+
+function sumArray(x) {
+    var sum = 0;
+    for(i=0;i<x.length;i++){
+        sum = sum + x[i];
+    }
+    return sum;
+}
+</script>
+</body>
+</html>
